@@ -1,0 +1,35 @@
+    .tableau,
+    .tableau tr,
+    .tableau th,
+    .tableau td {
+        border: 1px solid gray;
+        margin-bottom: 30px;
+    }
+    
+    .tableau2,
+    .tableau2 tr,
+    .tableau2 th,
+    .tableau2 td {
+        border: 1px solid gray;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    @media (max-width: 668px) {
+        .tableau,
+        .tableau tr,
+        .tableau th,
+        .tableau td {
+            border: 1px solid gray;
+            display: block;
+        }
+        .tableau2 tr,
+        .tableau2 th,
+        .tableau2 td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        }
+    }
