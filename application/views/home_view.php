@@ -16,6 +16,10 @@
    
 </head>
 <body>
+  <div class="loader">
+    <div></div>
+  </div>
+  <div class = "content">
     <!-- Navbar -->
     <header>
         <a href="home" class="logo">FoodManage</a>
@@ -109,6 +113,8 @@
     <!-- Copyright -->
         <div style="text-align:center; color:rgb(114, 111, 111);">&#169; copyright tout droit réservé 2021.</div>
     </footer>
+  </div>
+    
    
 
 
@@ -148,7 +154,6 @@
     }
    ?>
     
-
     <!-- Scroll Reveal -->
     <script src="<?php echo base_url()?>assets/js/home_view/scrollreveal.js"></script>
     <!-- Link To JavaScript -->
@@ -173,7 +178,6 @@
               data:{rowid:row_id},
               success:function(data)
               {
-                alert('menu rétirer du panier')
                 $('#cart_details').html(data);
                 $('#panier').load(' #panier');
               }
@@ -222,6 +226,15 @@
                 })
             })
       })
+    </script>
+
+    <!-- loader script -->
+
+    <script>
+        $(window).on('load', function(){
+          $('.loader').fadeOut(500);
+          $('.content').fadeIn(500);
+        })
     </script>
 
     <!-- script pour ajouter un menu au panier -->
@@ -278,7 +291,6 @@
                   data:{rowid:row_id},
                   success:function(data)
                   {
-                    alert('menu rétirer du panier')
                     $('#cart_details').html(data);
                     $('#panier').load(' #panier');
                   }
