@@ -27,4 +27,4 @@
         </div> 
         
 </section>
-<div id="loader" class="loader" style="position:fixed;top:50%;left:45%;display:none"><img src="<?php echo base_url().'assets/img/loader2.gif'?>" alt="loader"width='150px' height='100px'></div>
+<div id="loader" class="loader" style="position:fixed;top:50%;left:45%;display:none;"><img src="<?php echo base_url().'assets/img/loader2.gif'?>" alt="loader"width='150px' height='100px'></div>

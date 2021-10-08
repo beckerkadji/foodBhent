@@ -6,7 +6,8 @@ if(isset($_GET['transactionid'])){
         margin-top:17%; 
         display: flex;
         justify-content:center;
-        align-items:cente">
+        align-items:center;
+        margin-bottom:17%;">
         <div><br>
         <?php 
         if($message){

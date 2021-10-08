@@ -2,7 +2,8 @@
     margin-top:17%; 
     display: flex;
     justify-content:center;
-    align-items:center">
+    align-items:center;
+    margin-bottom:17%;">
     <div><br>
         <form action="insertcommand" method="post" style="padding:20px; border-radius: 5px;  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);" >
         <h3>Entrez les informations de livraison</h3><br>

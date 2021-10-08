@@ -1,6 +1,6 @@
 <!-- Home  Section-->
     <section class="home" id="home">
-        <div class=" home-text">
+        <div class="home-text">
             <h1>FoodManage</h1>
             <h2>Restaurants <br> Commandes <br> Livraisons</h2>
             <a href="#services" class="btn">En savoir plus</a>
