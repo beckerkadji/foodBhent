@@ -16,6 +16,14 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+    <!-- favicion -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url()?>favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url()?>favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo base_url()?>favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo base_url()?>favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Custom styles for this template-->
     <link href="<?=base_url()?>assets/css/manager_dashboard/sb-admin-2.min.css" rel="stylesheet">
@@ -443,12 +451,12 @@
                         <div class="loader" style="text-align:center; display:none"><img src="<?php echo base_url().'assets/img/loader2.gif'?>" alt="loader"width='150px' height='100px'></div>
                         <div style="width:100%"> 
                             <p style="background-color: #cfcfcd; padding:15px;border-radius:10px; text-align:center">
-                            <span style="color: red">Attention⚠</span> <br> cliquez sur le bouton "assigner un livreur" pour voir les personnes ayant postuler comme livreur de cette commande. cliquez sur "j'ai un livreur" si vous avez deja un livreur pour cette commande ! </p>
+                            <span style="color: red">Attention⚠</span> <br> cliquez sur le bouton "Rechercher un livreur" pour voir les personnes ayant postuler comme livreur de cette commande. cliquez sur "assigner un livreur" si vous avez deja un livreur pour cette commande ! </p>
                         </div>
                     </div>
                     <div class="modal-footer" style="display: flex; border-top:1px solid black; justify-content: space-between;">
-                        <div><button class="btn btn-primary mb-3" data-toggle="modal" data-target="#listelivreur" >assigner un livreur</button></div>
-                        <div><button type ="submit"   class="btn btn-primary mb-3 havedeliver" data-toggle="modal" data-target="#formdeliver" >j'ai un livreur</button></div>
+                        <div><button class="btn btn-primary mb-3" data-toggle="modal" data-target="#listelivreur" >Rechercher un livreur</button></div>
+                        <div><button type ="submit"   class="btn btn-primary mb-3 havedeliver" data-toggle="modal" data-target="#formdeliver" >assigner un livreur</button></div>
                     </div>
                     <div style="display: flex; justify-content:flex-end;">
                         <div style="width:40%"><button type="button" class="close" style="color:red; font-size:20px; margin: 10px" data-dismiss="modal">fermer</button></div>

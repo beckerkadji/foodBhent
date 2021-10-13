@@ -16,6 +16,14 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+    <!-- favicion -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url()?>favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url()?>favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo base_url()?>favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo base_url()?>favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Custom styles for this template-->
     <link href="<?=base_url()?>assets/css/manager_dashboard/sb-admin-2.min.css" rel="stylesheet"> 

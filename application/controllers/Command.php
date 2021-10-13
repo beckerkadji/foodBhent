@@ -226,6 +226,20 @@ class Command extends CI_Controller {
                 redirect('FaildTransaction?erreur='.$error.'&transactionid='.$transactionid);
                 die();
             }
+            elseif($response === '{"detail":"Sorry you cannot perform live transactions because your app is still in development: you can use test numbers or put the app in live","code":"application-not-live"}')
+            {
+                $error = 'Désolé !  vous ne pouvez pas éffectué de commande pour le moment car l\'application est en développement. réessayez plus tard';
+                redirect('FaildTransaction?erreur='.$error.'&transactionid='.$transactionid);
+                die();
+            }
+            elseif($response === '{"detail":"Error during the processing of the transaction","code":"generic-error"}')
+            {
+                $error = 'erreur pendant la transaction! veillez réessayer !';
+                redirect('FaildTransaction?erreur='.$error.'&transactionid='.$transactionid);
+                die();
+            }
+            
+            
             else
             {
                 echo $response;

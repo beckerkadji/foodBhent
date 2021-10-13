@@ -8,6 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/register.css');?>" />
+    <!-- favicion -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url()?>favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url()?>favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo base_url()?>favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo base_url()?>favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     
 </head>
 <body>
