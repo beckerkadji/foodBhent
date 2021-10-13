@@ -272,7 +272,7 @@ class Manager extends CI_Controller {
 			$extension = explode('.', $_FILES['menuimage']['name']);
 			$new_name = rand() . '.' . $extension[1];
 			//$destination = ''.base_url().'assets/img/manager_dashboard/upload/'. $new_name ;
-			$destination = ''.$_SERVER['DOCUMENT_ROOT'] .'/test/gestioncommandelivraison/assets/img/manager_dashboard/upload/'. $new_name ;
+			$destination = ''.$_SERVER['DOCUMENT_ROOT'] .'/assets/img/manager_dashboard/upload/'. $new_name ;
 			move_uploaded_file($_FILES['menuimage']['tmp_name'], $destination);
 			return $new_name;
 		}
@@ -378,7 +378,7 @@ class Manager extends CI_Controller {
 			$extension = explode('.', $_FILES['logo']['name']);
 			$new_name = rand() . '.' . $extension[1];
 			//$destination = ''.base_url().'assets/img/manager_dashboard/upload/'. $new_name ;
-			$destination = ''.$_SERVER['DOCUMENT_ROOT'] .'/test/gestioncommandelivraison/assets/img/manager_dashboard/upload/'. $new_name ;
+			$destination = ''.$_SERVER['DOCUMENT_ROOT'] .'/assets/img/manager_dashboard/upload/'. $new_name ;
 			move_uploaded_file($_FILES['logo']['tmp_name'], $destination);
 			return $new_name;
 		}

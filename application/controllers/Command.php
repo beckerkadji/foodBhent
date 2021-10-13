@@ -110,7 +110,7 @@ class Command extends CI_Controller {
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 50,
+            CURLOPT_TIMEOUT => 70,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => json_encode($data),
@@ -182,6 +182,7 @@ class Command extends CI_Controller {
             {
                 $error = 'le delai alloué pour l\'operation a expiré';
                 redirect('FaildTransaction?erreur='.$error.'&transactionid='.$transactionid);
+                die();
             }
             elseif($response === '{"detail":"The transaction amount exceed the max allowed","code":"subscriber-invalid-max-amount"}')
             {
@@ -219,10 +220,15 @@ class Command extends CI_Controller {
                 redirect('FaildTransaction?erreur='.$error.'&transactionid='.$transactionid);
                 die();
             }
+            elseif($response === '{"service":["This field may not be null."],"code":{"service":["null"]}}')
+            {
+                $error = 'le paiement doit s\'effectuer avec un numéro de téléphone locale(Orange ou Mtn). entrez un numéro de téléphone valide';
+                redirect('FaildTransaction?erreur='.$error.'&transactionid='.$transactionid);
+                die();
+            }
             else
             {
                 echo $response;
-
                 $command_status = "waiting";
 
                 $data = array(

@@ -1152,7 +1152,7 @@
                         $(".loader").show();    
                     },
                     success:function(data){
-                        $('.tableau').load(' .tableau');
+                       location.reload();
                     },
                     complete:function(data){
                         /* Hide image container */

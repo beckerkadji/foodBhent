@@ -76,7 +76,7 @@
                 <td> 
                     <ul>
                         <li>livreur: <?= $row2->delivername ?></li>
-                        <li>numéro de téléphone: <?= $row2->tel ?> <br></li>
+                        <li>numéro de téléphone: <?= $row2->teldeliver ?> <br></li>
                     </ul>
                 </td>
                 <td>

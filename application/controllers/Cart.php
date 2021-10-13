@@ -180,7 +180,7 @@ class Cart extends CI_Controller {
    public function confirm()
    {
       $commandid = $this->input->post('commandid');
-    $this->load->model('commands_model');
+      $this->load->model('commands_model');
       $requete = $this->commands_model->confirm($commandid);
      
       foreach($requete->result() as $row)
@@ -189,6 +189,7 @@ class Cart extends CI_Controller {
           $tel = $row->tel;
           $commandid = $row->commandid;
       }
+
 
       $numero = (string) $tel;
             $newtel =  '237'.$numero;

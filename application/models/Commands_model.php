@@ -1,4 +1,7 @@
 <?php
+if (!defined('BASEPATH'))
+exit('No direct script access allowed');
+
 class Commands_model extends CI_Model
 {
 	public function insert_command($data)
@@ -92,7 +95,7 @@ class Commands_model extends CI_Model
     
         }else
         {
-            foreach($query->result() as $row)
+            foreach($query2->result() as $row)
             {
                 $restaurantname = $row->name;
             }
@@ -166,7 +169,7 @@ class Commands_model extends CI_Model
 
     public function livreur($commandid)
     {
-        $this->db->where('postuler.commandid',$commandid);
+       $this->db->where('postuler.commandid',$commandid);
 
         $query = $this->db->distinct()->select('
             users.pseudo,

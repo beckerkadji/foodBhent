@@ -154,8 +154,7 @@
     }
    ?>
     
-    <!-- Scroll Reveal -->
-    <!-- <script src="<?php echo base_url()?>assets/js/home_view/scrollreveal.js"></script> -->
+
     <!-- Link To JavaScript -->
     <script src="<?php echo base_url()?>assets/vendor/manager_dashboard/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url()?>assets/vendor/manager_dashboard/bootstrap/js/bootstrap.bundle.min.js"></script>

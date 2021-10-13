@@ -53,7 +53,7 @@
                                 <li>Client: <?= $row->pseudo ?></li>
                                 <li>numéro de téléphone: <?= $row->tel ?> <br></li>
                                 <li>localisation: <?= $row->localisation ?></li>
-                                <li>adresse email: <?= $row->email ?> </li>
+                                <li>adresse email: <?= $row->email ?></li>
                             </ul>
                         </td>
                         <td>
